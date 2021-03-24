@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Orbitron', sans-serif;
+  background-color: #e3f6f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tile{
+  width: 30px;
+  height: 30px;
+  background-color: #BDBDBD;
+  
+  border: 4px outset #FFFFFF;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 900;
+  cursor: default;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.tile:active,
+.active{
+  border: 1px #8A8A8A solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mine{
+  background-color:brown;
+}
+
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px inset #FFFFFF;
+}
+
+.container{
+  font-family: 'Orbitron', sans-serif;
+  background-color: #BDBDBD;
+  padding: 10px;
+  display: inline-block;
+  border: 3px outset #FFFFFF;
+}
+
+.score-board{
+  border: 3px inset #FFFFFF;
+  margin-bottom: 10px;
+  background-color: #C0C0C0;
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.score{
+  background-color: black;
+  font-size: 35px;
+  color: red;
+  line-height: 35px;
+  padding: 1px;
+  font-weight: 500;
+  text-align: right;
+  width: 3ch;
+}
+
+.score span{
+  color: #410403;
+}
+
+.icon{
+  line-height: 10px;
+}
+
+.icon::before{
+  font-size: 18px;
+}
+
+.face{
+  width: 40px;
+  height: 40px;
+}
+
+.icon-bg{
+  background-color: yellow;
+  border-radius: 100px;
+}
+
+.wrong-bomb{
+  color: black;
+  background-color: red;
+  border-radius: 100px;
+}
+
+/* M A I N   P A G E */
+
+.App{
+  display: flex;
+  justify-content: center;
+  color: #2d334a;
+}
+
+.game{
+  padding: 40px;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  background-color: #FFF;
+  text-align: center;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 1200px;
+}
+
+.title{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.instructions{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.difficult-list{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px auto ;
+}
+
+.difficult{
+  font-size: 17px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: solid #2d334a 3px;
+  font-weight: 600;
+  text-align: left;
+  width: 28%;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #ffd803;
+}
+
+.results{
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 600;
 }

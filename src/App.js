@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Board from './Components/Board';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='game'>
+        <h1 className="title">Minesweeper by Carlitos</h1>
+        <p className='instructions'>Find the hidden mines without exploding, the numbers inside the tiles indicate the amount of surrounding mines. Clear the map in the shortest time possible.</p>
+        <p className='instructions'> Left-click: activates tile</p>
+        <p className='instructions'> Right-click: places a flag</p>
+        <p className='instructions'> Double-click: activates surrounding tiles</p>
+        <Board/>
+      </div>
     </div>
   );
 }
