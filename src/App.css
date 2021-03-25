@@ -115,6 +115,7 @@ body{
   margin-top: 60px;
   margin-bottom: 60px;
   max-width: 1200px;
+  width: 90%;
 }
 
 .title{
@@ -154,4 +155,14 @@ body{
   margin-top: 20px;
   font-size: 17px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .game{
+    width: initial;
+  }
+  .difficult-list{
+    width: 100%;
+  }
 }
