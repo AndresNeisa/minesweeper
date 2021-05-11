@@ -1,6 +1,7 @@
 # Minesweeper
 
 Enjoy a clone of the classic minesweeper game built in react :alien:. This project was made as part of a hackathon with [Mintbean](https://mintbean.io/).
+
 The goal of the game is to find all the mines in the shortest period of time. Click a tile to activate it, if you step into a mine you lose :boom:. the numbers on each tile represents the amount of mines :bomb: surrounding the tile. Use the right click to place a flag :golf: indicating that a mine is there. Use double click to activate all the surrounding tiles of the target excepting the ones with a flag.
 
 If you want to see a life version of the game click on this [link](https://determined-yalow-fa4c89.netlify.app/)
@@ -23,7 +24,7 @@ If you want to run the application locally, follow the instructions below:
 
 ### Easy:
 
-![Easy level minesweeper](src/Screenshots/Easy.png)
+![Easy level minesweeper](src/Screenshots/Easy.gif)
 
 ### Medium:
 
@@ -31,4 +32,4 @@ If you want to run the application locally, follow the instructions below:
 
 ### Hard:
 
-![Hard level minesweeper](src/Screenshots/Hard.png)
+![Hard level minesweeper](src/Screenshots/Hard.gif)
